@@ -1,0 +1,413 @@
+/* =====================================================
+   RESPONSIVO — TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        gap: 60px;
+    }
+
+    .footer-main {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVO — MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+    .container {
+        width: min(100% - 30px, 1180px);
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+
+    /* HEADER */
+
+    .navbar {
+        height: 75px;
+    }
+
+    .nav-menu {
+        position: absolute;
+
+        top: 75px;
+        left: 15px;
+        right: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 10px;
+
+        border: 1px solid rgba(255, 255, 255, .12);
+        border-radius: 15px;
+
+        background: rgba(8, 43, 50, .98);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: .3s ease;
+    }
+
+    .nav-menu.open {
+        opacity: 1;
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+    .nav-menu a {
+        padding: 13px;
+
+        font-size: 13px;
+    }
+
+    .nav-menu a.active::after {
+        display: none;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active span:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 720px;
+
+        background-position: 65% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(90deg,
+                rgba(6, 43, 51, .96),
+                rgba(6, 43, 51, .65));
+    }
+
+    .hero-content {
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-copy>p {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-trust {
+        margin-top: 30px;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+
+    /* STATS */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat {
+        padding: 25px 15px;
+    }
+
+    .stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .stat:nth-child(3),
+    .stat:nth-child(4) {
+        border-top: 1px solid #e7efee;
+    }
+
+
+    /* HEADINGS */
+
+    .section-heading {
+        display: block;
+    }
+
+    .section-heading>p {
+        margin-top: 20px;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-visual {
+        min-height: 450px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 450px;
+    }
+
+    .experience-badge {
+        width: 115px;
+        height: 115px;
+
+        top: 20px;
+        right: 15px;
+    }
+
+    .experience-badge strong {
+        font-size: 34px;
+    }
+
+    .about-floating-card {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* BENEFITS */
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit {
+        min-height: auto;
+    }
+
+
+    /* TEAM */
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-image {
+        height: 450px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    /* RESULTS */
+
+    .results-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .result-arrow {
+        margin: 0 auto;
+
+        transform: rotate(90deg);
+    }
+
+    .result-image {
+        height: 350px;
+    }
+
+
+    /* TESTIMONIALS */
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FAQ */
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    /* CTA */
+
+    .appointment-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .contact-items {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+        min-height: 350px;
+        border-radius: 18px;
+    }
+
+    .contact-map iframe {
+        height: 350px;
+    }
+
+    .map-placeholder {
+        min-height: 350px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE PEQUENO
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-eyebrow {
+        font-size: 10px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat strong {
+        font-size: 28px;
+    }
+
+    .section-heading h2,
+    .benefits-header h2,
+    .about-content h2,
+    .process-content h2,
+    .faq-intro h2,
+    .contact-info h2 {
+        font-size: 36px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .whatsapp {
+        right: 17px;
+        bottom: 17px;
+
+        width: 52px;
+        height: 52px;
+    }
+
+}
