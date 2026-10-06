@@ -1,711 +1,1198 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumière Odontologia | Odontologia e Estética de Alto Padrão</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Playfair Display & Inter -->
+    <meta name="description"
+        content="Clínica OdontoCare — odontologia moderna, humanizada e especializada para cuidar do seu sorriso.">
+
+    <title>OdontoCare | Clínica Odontológica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
 </head>
 
-<body class="bg-neutral-50 text-neutral-800 font-sans antialiased selection:bg-roseTheme selection:text-white">
+<body>
 
-    <header id="header"
-        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-roseTheme/20 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex items-center space-x-2 group">
-                <div
-                    class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                    <i class="fa-solid fa-tooth text-lg"></i>
+    <!-- =====================================================
+       HEADER / HERO
+  ====================================================== -->
+
+    <section class="hero" id="inicio">
+
+        <header class="header">
+
+            <div class="container navbar">
+
+                <a href="#inicio" class="logo">
+                    Odonto<span>Care</span>
+                </a>
+
+                <nav class="nav-menu">
+
+                    <a href="#inicio" class="active">Início</a>
+                    <a href="#sobre">A clínica</a>
+                    <a href="#servicos">Especialidades</a>
+                    <a href="#equipe">Equipe</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#contato">Contato</a>
+
+                </nav>
+
+                <a href="#agendamento" class="nav-cta">
+                    Agendar consulta
+                </a>
+
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow hero-eyebrow">
+                    <span>✦</span>
+                    Odontologia de excelência
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-neutral-900">LUMIÈRE</span>
-                    <span class="text-[10px] uppercase tracking-widest text-gold-400 font-semibold -mt-1">Odontologia de
-                        Alto Padrão</span>
+
+                <h1>
+                    Um sorriso bonito
+                    <span>começa com cuidado.</span>
+                </h1>
+
+                <p>
+                    Tecnologia, experiência e atendimento humanizado
+                    para transformar sua saúde bucal e devolver a
+                    confiança para sorrir.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#agendamento" class="btn btn-primary">
+                        Agendar minha consulta
+                        <span>→</span>
+                    </a>
+
+                    <a href="#servicos" class="btn btn-outline">
+                        Conhecer tratamentos
+                    </a>
+
                 </div>
+
+                <div class="hero-trust">
+
+                    <div class="avatars">
+                        <span>J</span>
+                        <span>M</span>
+                        <span>A</span>
+                        <span>+</span>
+                    </div>
+
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <strong>+2.000 pacientes satisfeitos</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-scroll">
+            <span>Role para conhecer</span>
+            <div class="scroll-line"></div>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       STATS / CONFIANÇA
+  ====================================================== -->
+
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+            <div class="stat">
+                <strong>15<span>+</span></strong>
+                <p>Anos de experiência</p>
+            </div>
+
+            <div class="stat">
+                <strong>8<span>k+</span></strong>
+                <p>Pacientes atendidos</p>
+            </div>
+
+            <div class="stat">
+                <strong>12<span>+</span></strong>
+                <p>Especialidades</p>
+            </div>
+
+            <div class="stat">
+                <strong>4.9<span>★</span></strong>
+                <p>Avaliação dos pacientes</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       SERVIÇOS
+  ====================================================== -->
+
+    <section class="services section" id="servicos">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        Nossas especialidades
+                    </div>
+
+                    <h2>
+                        Cuidado completo para
+                        <span>o seu sorriso.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Reunimos diferentes especialidades em um único lugar
+                    para oferecer uma experiência completa e personalizada.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <article class="service-card featured">
+
+                    <div class="service-number">01</div>
+
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M7 4.5C5.3 4.5 4 5.8 4 7.5V10c0 2.2 1.1 4.3 3 5.5V19c0 .8.7 1.5 1.5 1.5S10 19.8 10 19v-3h4v3c0 .8.7 1.5 1.5 1.5S17 19.8 17 19v-3.5c1.9-1.2 3-3.3 3-5.5V7.5c0-1.7-1.3-3-3-3-.9 0-1.7.4-2.2 1.1C14.1 5 13.1 4.5 12 4.5s-2.1.5-2.8 1.1C8.7 4.9 7.9 4.5 7 4.5Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </div>
+
+                    <h3>Implantes dentários</h3>
+
+                    <p>
+                        Recupere dentes perdidos com segurança,
+                        naturalidade e conforto.
+                    </p>
+
+                    <a href="#contato">Saiba mais <span>→</span></a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">02</div>
+
+                    <div class="service-icon">
+                        ✨
+                    </div>
+
+                    <h3>Estética dental</h3>
+
+                    <p>
+                        Clareamento, lentes e restaurações
+                        para um sorriso mais harmônico.
+                    </p>
+
+                    <a href="#contato">Saiba mais <span>→</span></a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">03</div>
+
+                    <div class="service-icon">
+                        ◇
+                    </div>
+
+                    <h3>Ortodontia</h3>
+
+                    <p>
+                        Aparelhos modernos para alinhar
+                        seus dentes com conforto.
+                    </p>
+
+                    <a href="#contato">Saiba mais <span>→</span></a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">04</div>
+
+                    <div class="service-icon">
+                        ♡
+                    </div>
+
+                    <h3>Odontopediatria</h3>
+
+                    <p>
+                        Cuidado especial para que os pequenos
+                        tenham uma relação positiva com o dentista.
+                    </p>
+
+                    <a href="#contato">Saiba mais <span>→</span></a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">05</div>
+
+                    <div class="service-icon">
+                        +
+                    </div>
+
+                    <h3>Periodontia</h3>
+
+                    <p>
+                        Tratamentos para manter gengivas
+                        saudáveis e prevenir doenças.
+                    </p>
+
+                    <a href="#contato">Saiba mais <span>→</span></a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">06</div>
+
+                    <div class="service-icon">
+                        ◎
+                    </div>
+
+                    <h3>Clínica geral</h3>
+
+                    <p>
+                        Prevenção, limpeza, restaurações e
+                        acompanhamento da sua saúde bucal.
+                    </p>
+
+                    <a href="#contato">Saiba mais <span>→</span></a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       SOBRE
+  ====================================================== -->
+
+    <section class="about section" id="sobre">
+        <div class="container about-grid">
+            <div class="about-visual">
+
+                <div class="about-main-image">
+                    <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=85"
+                        alt="Dentista realizando atendimento odontológico">
+                </div>
+
+                <div class="about-secondary-image">
+                    <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=85"
+                        alt="Consultório odontológico moderno">
+                </div>
+
+                <div class="experience-badge">
+                    <strong>15</strong>
+
+                    <div>
+                        <span>anos</span>
+                        <small>de experiência</small>
+                    </div>
+                </div>
+
+                <div class="about-floating-card">
+
+                    <div class="check-icon">✓</div>
+
+                    <div>
+                        <strong>Atendimento humanizado</strong>
+                        <span>Cada paciente é único</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="eyebrow">
+                    Sobre a OdontoCare
+                </div>
+
+                <h2>
+                    Mais do que cuidar dos dentes,
+                    <span>cuidamos de pessoas.</span>
+                </h2>
+
+                <p class="lead">
+                    A OdontoCare nasceu com um propósito simples:
+                    tornar a experiência no dentista mais leve,
+                    confortável e humana.
+                </p>
+
+                <p>
+                    Nossa clínica combina profissionais especializados,
+                    tecnologia de ponta e um ambiente acolhedor para
+                    oferecer tratamentos seguros e resultados naturais.
+                </p>
+
+                <div class="about-features">
+
+                    <div>
+                        <span class="feature-check">✓</span>
+                        <span>Profissionais especializados</span>
+                    </div>
+
+                    <div>
+                        <span class="feature-check">✓</span>
+                        <span>Tecnologia de última geração</span>
+                    </div>
+
+                    <div>
+                        <span class="feature-check">✓</span>
+                        <span>Ambiente confortável e moderno</span>
+                    </div>
+
+                    <div>
+                        <span class="feature-check">✓</span>
+                        <span>Planos de tratamento personalizados</span>
+                    </div>
+
+                </div>
+
+                <a href="#contato" class="text-link">
+                    Conheça nossa clínica
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       DIFERENCIAIS
+  ====================================================== -->
+
+    <section class="benefits section">
+
+        <div class="container">
+
+            <div class="benefits-header">
+
+                <div class="eyebrow">
+                    Por que escolher a OdontoCare?
+                </div>
+
+                <h2>
+                    Uma experiência diferente
+                    <span>do começo ao fim.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">01</div>
+
+                    <h3>Escuta de verdade</h3>
+
+                    <p>
+                        Antes de qualquer tratamento, entendemos
+                        suas necessidades, expectativas e objetivos.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">02</div>
+
+                    <h3>Tecnologia</h3>
+
+                    <p>
+                        Utilizamos recursos modernos para diagnósticos
+                        mais precisos e tratamentos mais eficientes.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">03</div>
+
+                    <h3>Plano personalizado</h3>
+
+                    <p>
+                        Cada sorriso é diferente. Por isso,
+                        seu tratamento também deve ser.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">04</div>
+
+                    <h3>Resultados naturais</h3>
+
+                    <p>
+                        Nosso objetivo é proporcionar resultados
+                        bonitos, funcionais e naturais.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       EQUIPE
+  ====================================================== -->
+
+    <section class="team section" id="equipe">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <div class="eyebrow">
+                    Nossa equipe
+                </div>
+
+                <h2>
+                    Especialistas que cuidam
+                    <span>do seu sorriso.</span>
+                </h2>
+
+                <p>
+                    Profissionais experientes e apaixonados
+                    pelo que fazem.
+                </p>
+
+            </div>
+
+
+            <div class="team-grid">
+
+                <article class="doctor-card">
+
+                    <div class="doctor-image doctor-1"></div>
+
+                    <div class="doctor-info">
+
+                        <div>
+                            <span>Cirurgiã-dentista</span>
+                            <h3>Dra. Mariana Costa</h3>
+                        </div>
+
+                        <div class="doctor-social">in</div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="doctor-card">
+
+                    <div class="doctor-image doctor-2"></div>
+
+                    <div class="doctor-info">
+
+                        <div>
+                            <span>Implantodontista</span>
+                            <h3>Dr. Rafael Mendes</h3>
+                        </div>
+
+                        <div class="doctor-social">in</div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="doctor-card">
+
+                    <div class="doctor-image doctor-3"></div>
+
+                    <div class="doctor-info">
+
+                        <div>
+                            <span>Ortodontista</span>
+                            <h3>Dra. Camila Rocha</h3>
+                        </div>
+
+                        <div class="doctor-social">in</div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       PROCESSO
+  ====================================================== -->
+
+    <section class="process section">
+
+        <div class="container process-grid">
+
+            <div class="process-content">
+
+                <div class="eyebrow">
+                    Como funciona
+                </div>
+
+                <h2>
+                    Seu tratamento começa
+                    <span>com uma conversa.</span>
+                </h2>
+
+                <p>
+                    Tornamos todo o processo simples e transparente
+                    para que você se sinta seguro em cada etapa.
+                </p>
+
+                <a href="#agendamento" class="btn btn-primary">
+                    Quero começar <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="process-steps">
+
+                <div class="step">
+
+                    <div class="step-number">01</div>
+
+                    <div>
+                        <h3>Agende sua avaliação</h3>
+                        <p>
+                            Escolha o melhor dia e horário para você.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">02</div>
+
+                    <div>
+                        <h3>Converse com o especialista</h3>
+                        <p>
+                            Vamos entender suas necessidades e objetivos.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">03</div>
+
+                    <div>
+                        <h3>Receba seu plano</h3>
+                        <p>
+                            Você terá um plano personalizado e transparente.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">04</div>
+
+                    <div>
+                        <h3>Comece seu tratamento</h3>
+                        <p>
+                            Conte com nossa equipe durante toda a jornada.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       ANTES E DEPOIS
+  ====================================================== -->
+
+    <section class="results section">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <div class="eyebrow">
+                    Resultados
+                </div>
+
+                <h2>
+                    Pequenas mudanças podem
+                    <span>transformar um sorriso.</span>
+                </h2>
+
+                <p>
+                    Cada tratamento é planejado de forma individual
+                    para respeitar as características de cada paciente.
+                </p>
+
+            </div>
+
+
+            <div class="results-grid">
+
+                <div class="result-card">
+
+                    <div class="result-image result-before"></div>
+
+                    <span>Antes</span>
+
+                </div>
+
+                <div class="result-arrow">→</div>
+
+                <div class="result-card">
+
+                    <div class="result-image result-after"></div>
+
+                    <span>Depois</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       DEPOIMENTOS
+  ====================================================== -->
+
+    <section class="testimonials section" id="depoimentos">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <div class="eyebrow">
+                    Histórias reais
+                </div>
+
+                <h2>
+                    Quem passa por aqui,
+                    <span>recomenda.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="testimonials-grid">
+
+                <article class="testimonial">
+
+                    <div class="quote">“</div>
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        “Desde a primeira consulta me senti muito acolhida.
+                        Toda a equipe é extremamente atenciosa e o resultado
+                        do meu tratamento ficou muito natural.”
+                    </p>
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">A</div>
+
+                        <div>
+                            <strong>Ana Paula</strong>
+                            <span>Paciente OdontoCare</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="testimonial featured-testimonial">
+
+                    <div class="quote">“</div>
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        “Eu tinha muito medo de fazer um implante, mas
+                        o Dr. Rafael explicou tudo com muita calma.
+                        Hoje voltei a sorrir sem vergonha.”
+                    </p>
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">R</div>
+
+                        <div>
+                            <strong>Ricardo Almeida</strong>
+                            <span>Paciente OdontoCare</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="testimonial">
+
+                    <div class="quote">“</div>
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        “Clínica linda, atendimento impecável e profissionais
+                        excelentes. Minha experiência com o clareamento foi
+                        maravilhosa. Recomendo muito!”
+                    </p>
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">M</div>
+
+                        <div>
+                            <strong>Marina Souza</strong>
+                            <span>Paciente OdontoCare</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       FAQ
+  ====================================================== -->
+
+    <section class="faq section">
+
+        <div class="container faq-grid">
+
+            <div class="faq-intro">
+
+                <div class="eyebrow">
+                    Dúvidas frequentes
+                </div>
+
+                <h2>
+                    Tem alguma dúvida?
+                    <span>Estamos aqui para ajudar.</span>
+                </h2>
+
+                <p>
+                    Confira algumas das perguntas mais frequentes
+                    dos nossos pacientes.
+                </p>
+
+                <a href="#contato" class="text-link">
+                    Fale com nossa equipe <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <details open>
+
+                    <summary>
+                        Como funciona a primeira consulta?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Na primeira consulta fazemos uma avaliação completa,
+                        conversamos sobre suas necessidades e explicamos
+                        as melhores opções de tratamento para o seu caso.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Vocês trabalham com convênios?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Trabalhamos com diferentes formas de pagamento.
+                        Entre em contato com nossa equipe para consultar
+                        os convênios e condições disponíveis.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Posso parcelar meu tratamento?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Sim. Oferecemos diferentes condições de pagamento
+                        e parcelamento, que podem variar de acordo com
+                        o tratamento escolhido.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Quanto custa uma avaliação?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Entre em contato com nossa equipe para consultar
+                        os valores e condições atuais da avaliação.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Vocês atendem crianças?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Sim. Temos atendimento especializado para crianças,
+                        com uma abordagem leve e acolhedora.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+       CTA AGENDAMENTO
+  ====================================================== -->
+
+    <section class="appointment" id="agendamento">
+
+        <div class="appointment-overlay"></div>
+
+        <div class="container appointment-content">
+
+            <div>
+
+                <div class="eyebrow light">
+                    Agende sua consulta
+                </div>
+
+                <h2>
+                    Seu próximo sorriso
+                    pode começar hoje.
+                </h2>
+
+                <p>
+                    Fale com nossa equipe e encontre o melhor
+                    tratamento para você.
+                </p>
+
+            </div>
+
+            <a href="https://wa.me/5511999999999" class="btn btn-white">
+                Agendar pelo WhatsApp
+                <span>↗</span>
             </a>
 
-            <!-- Navigation Links (Desktop) -->
-            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-neutral-700">
-                <a href="#sobre" class="hover:text-gold-400 transition-colors">Sobre Nós</a>
-                <a href="#diferenciais" class="hover:text-gold-400 transition-colors">Diferenciais</a>
-                <a href="#tratamentos" class="hover:text-gold-400 transition-colors">Tratamentos</a>
-                <a href="#depoimentos" class="hover:text-gold-400 transition-colors">Depoimentos</a>
-                <a href="#contato" class="hover:text-gold-400 transition-colors">Localização</a>
-            </nav>
+        </div>
 
-            <!-- Action Button -->
-            <div class="flex items-center space-x-4">
-                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Lumière%20Odontologia."
-                    target="_blank"
-                    class="hidden sm:inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Agendar via WhatsApp</span>
+    </section>
+
+
+    <!-- =====================================================
+       CONTATO
+  ====================================================== -->
+
+    <section class="contact section" id="contato">
+
+
+        <section class="contact section" id="contato">
+            <div class="container contact-grid">
+                <div class="contact-info">
+
+                    <div class="eyebrow">
+                        Entre em contato
+                    </div>
+
+                    <h2>
+                        Estamos esperando
+                        <span>por você.</span>
+                    </h2>
+
+                    <p>
+                        Tire suas dúvidas, solicite informações ou
+                        agende sua avaliação com nossa equipe.
+                    </p>
+
+
+                    <div class="contact-items">
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">☎</div>
+
+                            <div>
+                                <span>Telefone</span>
+                                <strong>(11) 99999-9999</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">✉</div>
+
+                            <div>
+                                <span>E-mail</span>
+                                <strong>contato@odontocare.com.br</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">⌖</div>
+
+                            <div>
+                                <span>Endereço</span>
+                                <strong>Av. Paulista, 1000 — São Paulo/SP</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">◷</div>
+
+                            <div>
+                                <span>Horário</span>
+                                <strong>Seg a Sex — 08h às 19h</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-map">
+
+                    <iframe src="https://www.google.com/maps?q=Av.%20Paulista,%201000,%20São%20Paulo,%20SP&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+
+    <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo">
+                    Odonto<span>Care</span>
                 </a>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-btn" class="md:hidden text-neutral-800 focus:outline-none p-2">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu"
-            class="hidden md:hidden bg-white border-b border-neutral-200 px-6 py-4 space-y-3 shadow-xl">
-            <a href="#sobre" class="block text-neutral-700 hover:text-gold-400 font-medium py-1">Sobre Nós</a>
-            <a href="#diferenciais" class="block text-neutral-700 hover:text-gold-400 font-medium py-1">Diferenciais</a>
-            <a href="#tratamentos" class="block text-neutral-700 hover:text-gold-400 font-medium py-1">Tratamentos</a>
-            <a href="#depoimentos" class="block text-neutral-700 hover:text-gold-400 font-medium py-1">Depoimentos</a>
-            <a href="#contato" class="block text-neutral-700 hover:text-gold-400 font-medium py-1">Localização</a>
-            <div class="pt-2">
-                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Lumière%20Odontologia."
-                    target="_blank"
-                    class="flex items-center justify-center space-x-2 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-full shadow">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Agendar via WhatsApp</span>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section class="relative min-h-screen pt-28 pb-16 flex items-center hero-pattern overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent z-0"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-                <!-- Left Column: Text & CTA -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div
-                        class="inline-flex items-center space-x-2 bg-roseTheme/10 border border-roseTheme/30 px-4 py-1.5 rounded-full text-roseTheme-dark font-medium text-xs sm:text-sm tracking-wide">
-                        <i class="fa-solid fa-sparkles text-gold-400"></i>
-                        <span>Excelência e Exclusividade em Odontologia</span>
-                    </div>
-
-                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight">
-                        O sorriso dos seus sonhos com <span class="gold-gradient-text">sofisticação</span> e conforto.
-                    </h1>
-
-                    <p
-                        class="text-neutral-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        Combinamos tecnologia de ponta, atendimento humanizado e um ambiente acolhedor em tons delicados
-                        para proporcionar a você uma experiência odontológica única e transformadora.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Lumière%20Odontologia."
-                            target="_blank"
-                            class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 gold-pulse">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            <span class="text-base">Agendar Avaliação via WhatsApp</span>
-                        </a>
-
-                        <a href="#tratamentos"
-                            class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-white hover:bg-neutral-100 text-neutral-800 border border-neutral-300 font-medium px-6 py-4 rounded-full shadow-sm transition-all">
-                            <span>Conhecer Tratamentos</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- Trust indicators -->
-                    <div
-                        class="pt-8 border-t border-neutral-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-neutral-600">
-                        <div class="flex items-center space-x-2">
-                            <i class="fa-solid fa-star text-gold-400"></i>
-                            <span class="font-semibold text-neutral-900">4.9/5.0</span>
-                            <span>(Avaliações no Google)</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="fa-solid fa-shield-heart text-roseTheme"></i>
-                            <span>Atendimento Humanizado</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="fa-solid fa-gem text-gold-400"></i>
-                            <span>Alto Padrão</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Visual Image Grid -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Main Image -->
-                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
-                                alt="Clínica Odontológica Sofisticada"
-                                class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Lumière+Odontologia'">
-                        </div>
-                        <!-- Floating Badge Card -->
-                        <div
-                            class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-gold-200 hidden sm:flex items-center space-x-4 max-w-xs">
-                            <div
-                                class="w-12 h-12 rounded-full gold-gradient-bg flex items-center justify-center text-white text-xl shadow">
-                                <i class="fa-solid fa-award"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-neutral-900 text-sm">Tecnologia Avançada</h4>
-                                <p class="text-xs text-neutral-500">Procedimentos indolores e seguros.</p>
-                            </div>
-                        </div>
-                        <!-- Absolute decorative circle -->
-                        <div
-                            class="absolute -top-6 -right-6 w-24 h-24 rounded-full gold-gradient-bg opacity-20 blur-xl -z-10">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre" class="py-20 bg-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold-500 uppercase tracking-widest text-xs font-bold block mb-2">Por que nos
-                    escolher</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
-                    Uma nova experiência em cuidar do seu sorriso
-                </h2>
-                <p class="text-neutral-600 font-light">
-                    Na Lumière, cada detalhe foi rigorosamente planejado para oferecer conforto absoluto, unindo a alta
-                    tecnologia da odontologia moderna ao aconchego de um ambiente sofisticado.
+                <p>
+                    Cuidando de sorrisos com tecnologia,
+                    experiência e um atendimento que coloca
+                    você em primeiro lugar.
                 </p>
-            </div>
 
-            <!-- Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                <!-- Card 1 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 gold-border-glow transition-all duration-300 group hover:bg-white">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-roseTheme/10 text-roseTheme flex items-center justify-center text-2xl mb-6 group-hover:gold-gradient-bg  transition-all shadow-sm">
-                        <i class="fa-solid fa-hands-holding-child"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-neutral-900 mb-3">Atendimento Humanizado</h3>
-                    <p class="text-neutral-600 text-sm leading-relaxed">
-                        Escuta ativa, acolhimento e respeito ao seu tempo e individualidade, transformando sua visita em
-                        um momento de autocuidado.
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 gold-border-glow transition-all duration-300 group hover:bg-white">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-roseTheme/10 text-roseTheme flex items-center justify-center text-2xl mb-6 group-hover:gold-gradient-bg transition-all shadow-sm">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-neutral-900 mb-3">Tecnologia de Ponta</h3>
-                    <p class="text-neutral-600 text-sm leading-relaxed">
-                        Scanner intraoral, planejamento digital do sorriso (DSD) e equipamentos de última geração para
-                        diagnósticos precisos.
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 gold-border-glow transition-all duration-300 group hover:bg-white">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-roseTheme/10 text-roseTheme flex items-center justify-center text-2xl mb-6 group-hover:gold-gradient-bg transition-all shadow-sm">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-neutral-900 mb-3">Ambiente Exclusivo</h3>
-                    <p class="text-neutral-600 text-sm leading-relaxed">
-                        Decoração elegante em tons de rosa, branco e dourado, aroma exclusivo e salas projetadas para o
-                        seu total relaxamento.
-                    </p>
-                </div>
-
-                <!-- Card 4 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 gold-border-glow transition-all duration-300 group hover:bg-white">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-roseTheme/10 text-roseTheme flex items-center justify-center text-2xl mb-6 group-hover:gold-gradient-bg transition-all shadow-sm">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-neutral-900 mb-3">Equipe Especializada</h3>
-                    <p class="text-neutral-600 text-sm leading-relaxed">
-                        Profissionais altamente qualificados com pós-graduação nas melhores instituições do país e
-                        constante atualização científica.
-                    </p>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
                 </div>
 
             </div>
+
+
+            <div class="footer-column">
+
+                <h4>Clínica</h4>
+
+                <a href="#sobre">Sobre nós</a>
+                <a href="#equipe">Nossa equipe</a>
+                <a href="#servicos">Especialidades</a>
+                <a href="#depoimentos">Depoimentos</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Atendimento</h4>
+
+                <a href="#agendamento">Agendar consulta</a>
+                <a href="#contato">Contato</a>
+                <a href="#contato">Localização</a>
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Especialidades</h4>
+
+                <a href="#servicos">Implantes</a>
+                <a href="#servicos">Ortodontia</a>
+                <a href="#servicos">Estética dental</a>
+                <a href="#servicos">Clínica geral</a>
+
+            </div>
+
         </div>
-    </section>
 
-    <section id="tratamentos" class="py-20 bg-roseTheme-light/40 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold-500 uppercase tracking-widest text-xs font-bold block mb-2">Especialidades</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
-                    Tratamentos de Excelência
-                </h2>
-                <p class="text-neutral-600 font-light">
-                    Conheça nossos principais procedimentos focados em saúde, estética e na harmonização perfeita do seu
-                    sorriso.
-                </p>
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 OdontoCare. Todos os direitos reservados.
+            </span>
+
+            <div>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos de uso</a>
             </div>
 
-            <!-- Treatments Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Treatment 1 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 flex flex-col justify-between group">
-                    <div>
-                        <div class="h-52 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600"
-                                alt="Clareamento a Laser"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Clareamento'">
-                            <div
-                                class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-gold-500 shadow">
-                                Mais Procurado
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl text-neutral-900 mb-2">Clareamento a Laser</h3>
-                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">
-                                Tecnologia avançada que garante dentes visivelmente mais brancos em uma única sessão,
-                                com total segurança e sensibilidade controlada.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Clareamento%20a%20Laser."
-                            target="_blank"
-                            class="flex items-center justify-center space-x-2 w-full bg-roseTheme-light hover:bg-roseTheme hover:text-white text-roseTheme-dark font-medium py-3 rounded-xl transition-colors text-sm border border-roseTheme/30">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Tirar dúvidas no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Treatment 2 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 flex flex-col justify-between group">
-                    <div>
-                        <div class="h-52 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=600"
-                                alt="Lentes de Contato Dental"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Lentes+de+Contato'">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl text-neutral-900 mb-2">Lentes de Contato Dental</h3>
-                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">
-                                Facetas de porcelana ultrafinas projetadas sob medida para corrigir formato, cor e
-                                alinhamento, criando um sorriso harmonioso e natural.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Lentes%20de%20Contato%20Dental."
-                            target="_blank"
-                            class="flex items-center justify-center space-x-2 w-full bg-roseTheme-light hover:bg-roseTheme hover:text-white text-roseTheme-dark font-medium py-3 rounded-xl transition-colors text-sm border border-roseTheme/30">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Tirar dúvidas no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Treatment 3 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 flex flex-col justify-between group">
-                    <div>
-                        <div class="h-52 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce6395?auto=format&fit=crop&q=80&w=600"
-                                alt="Alinhadores Invisíveis"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Invisalign'">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl text-neutral-900 mb-2">Invisalign & Alinhadores</h3>
-                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">
-                                Alinhe seus dentes de forma discreta, confortável e removível, sem os incômodos e a
-                                estética dos aparelhos metálicos tradicionais.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Invisalign."
-                            target="_blank"
-                            class="flex items-center justify-center space-x-2 w-full bg-roseTheme-light hover:bg-roseTheme hover:text-white text-roseTheme-dark font-medium py-3 rounded-xl transition-colors text-sm border border-roseTheme/30">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Tirar dúvidas no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Treatment 4 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 flex flex-col justify-between group">
-                    <div>
-                        <div class="h-52 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=600"
-                                alt="Implantes Dentários"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Implantes'">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl text-neutral-900 mb-2">Implantes Dentários</h3>
-                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">
-                                Recupere a função mastigatória e a autoestima com implantes em titânio de alta qualidade
-                                e técnicas cirúrgicas minimamente invasivas.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Implantes%20Dentários."
-                            target="_blank"
-                            class="flex items-center justify-center space-x-2 w-full bg-roseTheme-light hover:bg-roseTheme hover:text-white text-roseTheme-dark font-medium py-3 rounded-xl transition-colors text-sm border border-roseTheme/30">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Tirar dúvidas no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Treatment 5 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 flex flex-col justify-between group">
-                    <div>
-                        <div class="h-52 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1512290900672-1c6e1dbcb775?auto=format&fit=crop&q=80&w=600"
-                                alt="Harmonização Orofacial"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Harmonizacao'">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl text-neutral-900 mb-2">Harmonização Orofacial</h3>
-                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">
-                                Procedimentos como toxina botulínica e preenchimento labial que valorizam os traços do
-                                seu rosto em perfeita harmonia com o novo sorriso.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Harmonização%20Orofacial."
-                            target="_blank"
-                            class="flex items-center justify-center space-x-2 w-full bg-roseTheme-light hover:bg-roseTheme hover:text-white text-roseTheme-dark font-medium py-3 rounded-xl transition-colors text-sm border border-roseTheme/30">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Tirar dúvidas no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Treatment 6 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-100 flex flex-col justify-between group">
-                    <div>
-                        <div class="h-52 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600"
-                                alt="Prevenção e Check-up Digital"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.src='https://placehold.co/600x400/F7EDED/AA820A?text=Prevencao'">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl text-neutral-900 mb-2">Check-up Preventivo Digital
-                            </h3>
-                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">
-                                Diagnóstico precoce através de câmera intraoral de alta definição, detectando
-                                microlesões antes mesmo que causem desconforto.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Check-up%20Preventivo."
-                            target="_blank"
-                            class="flex items-center justify-center space-x-2 w-full bg-roseTheme-light hover:bg-roseTheme hover:text-white text-roseTheme-dark font-medium py-3 rounded-xl transition-colors text-sm border border-roseTheme/30">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Tirar dúvidas no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
         </div>
-    </section>
 
-    <section id="depoimentos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold-500 uppercase tracking-widest text-xs font-bold block mb-2">Depoimentos</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
-                    Histórias de sorrisos transformados
-                </h2>
-                <p class="text-neutral-600 font-light">
-                    Veja o que nossos pacientes dizem sobre a experiência de realizar seu tratamento na Lumière
-                    Odontologia.
-                </p>
-            </div>
-
-            <!-- Testimonials Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                <!-- Testimonial 1 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 flex flex-col justify-between shadow-sm relative">
-                    <div class="absolute top-6 right-6 text-gold-300 text-3xl font-serif">“</div>
-                    <div>
-                        <div class="flex items-center space-x-1 text-gold-400 mb-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-neutral-700 text-sm leading-relaxed mb-6 italic">
-                            "Minha experiência na Lumière foi simplesmente impecável. Desde a recepção com um café
-                            maravilhoso até o atendimento da Dra. O ambiente é um luxo, super aconchegante e fiz lentes
-                            de contato que mudaram minha vida!"
-                        </p>
-                    </div>
-                    <div class="flex items-center space-x-4 pt-4 border-t border-neutral-200">
-                        <div
-                            class="w-12 h-12 rounded-full gold-gradient-bg flex items-center justify-center text-white font-bold text-lg">
-                            CR
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-neutral-900 text-sm">Camila Ribeiro</h4>
-                            <p class="text-xs text-neutral-500">Paciente de Lentes de Contato</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 flex flex-col justify-between shadow-sm relative">
-                    <div class="absolute top-6 right-6 text-gold-300 text-3xl font-serif">“</div>
-                    <div>
-                        <div class="flex items-center space-x-1 text-gold-400 mb-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-neutral-700 text-sm leading-relaxed mb-6 italic">
-                            "Sempre tive pavor de dentista, mas a equipe da Lumière me tratou com tanto carinho e
-                            paciência que superei o medo. O consultório é lindo, cheiroso e super moderno. Recomendo de
-                            olhos fechados!"
-                        </p>
-                    </div>
-                    <div class="flex items-center space-x-4 pt-4 border-t border-neutral-200">
-                        <div
-                            class="w-12 h-12 rounded-full gold-gradient-bg flex items-center justify-center text-white font-bold text-lg">
-                            MN
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-neutral-900 text-sm">Mariana Nogueira</h4>
-                            <p class="text-xs text-neutral-500">Paciente de Clareamento & Prev.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div
-                    class="bg-neutral-50 p-8 rounded-2xl border border-neutral-100 flex flex-col justify-between shadow-sm relative">
-                    <div class="absolute top-6 right-6 text-gold-300 text-3xl font-serif">“</div>
-                    <div>
-                        <div class="flex items-center space-x-1 text-gold-400 mb-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-neutral-700 text-sm leading-relaxed mb-6 italic">
-                            "Profissionais de altíssimo nível. Fiz meu tratamento com alinhadores invisíveis e o
-                            resultado superou todas as expectativas. O atendimento pelo WhatsApp também é super ágil e
-                            atencioso."
-                        </p>
-                    </div>
-                    <div class="flex items-center space-x-4 pt-4 border-t border-neutral-200">
-                        <div
-                            class="w-12 h-12 rounded-full gold-gradient-bg flex items-center justify-center text-white font-bold text-lg">
-                            RL
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-neutral-900 text-sm">Rafael Lima</h4>
-                            <p class="text-xs text-neutral-500">Paciente de Invisalign</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="py-20 bg-neutral-900 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-                <!-- Left: Info & WhatsApp CTA -->
-                <div class="space-y-8">
-                    <div>
-                        <span class="text-gold-400 uppercase tracking-widest text-xs font-bold block mb-2">Venha nos
-                            visitar</span>
-                        <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">
-                            Agende sua consulta com total praticidade
-                        </h2>
-                        <p class="text-neutral-400 font-light">
-                            Estamos localizados em um dos bairros mais nobres da cidade, com estacionamento próprio e
-                            fácil acesso. Agende seu horário diretamente com nossa equipe.
-                        </p>
-                    </div>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-white shrink-0 mt-1">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-white">Endereço</h4>
-                                <p class="text-neutral-400 text-sm">Av. Brigadeiro Faria Lima, 1500 - Sala 42</p>
-                                <p class="text-neutral-400 text-sm">Jardin Paulistano, São Paulo - SP</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-white shrink-0 mt-1">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-white">Horário de Atendimento</h4>
-                                <p class="text-neutral-400 text-sm">Segunda a Sexta-feira: 08:00 às 19:00</p>
-                                <p class="text-neutral-400 text-sm">Sábados: 08:00 às 13:00</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div
-                                class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-white shrink-0 mt-1">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-white">Contato Direto</h4>
-                                <p class="text-neutral-400 text-sm">(11) 99999-9999 / (11) 3333-4444</p>
-                                <p class="text-neutral-400 text-sm">contato@lumiereodontologia.com.br</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-4">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Lumière%20Odontologia."
-                            target="_blank"
-                            class="inline-flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all gold-pulse">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            <span>Falar com Atendente no WhatsApp</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right: Simulated Map / Location Card -->
-                <div class="bg-neutral-800 p-4 rounded-3xl border border-neutral-700 shadow-2xl">
-                    <div
-                        class="relative h-[400px] rounded-2xl overflow-hidden bg-neutral-900 flex flex-col items-center justify-center text-center p-6 border border-neutral-700">
-                        <!-- Simulated Interactive Map background overlay -->
-                        <div class="absolute inset-0 opacity-40 bg-cover bg-center"
-                            style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800')">
-                        </div>
-                        <div class="absolute inset-0 bg-neutral-900/60"></div>
-
-                        <div class="relative z-10 space-y-4 max-w-sm">
-                            <div
-                                class="w-16 h-16 rounded-full gold-gradient-bg flex items-center justify-center text-white text-3xl mx-auto shadow-xl gold-pulse">
-                                <i class="fa-solid fa-tooth"></i>
-                            </div>
-                            <h3 class="font-serif text-2xl font-bold text-white">Lumière Odontologia</h3>
-                            <p class="text-neutral-300 text-xs">
-                                Venha tomar um café conosco e descubra como podemos transformar seu sorriso.
-                            </p>
-                            <a href="https://maps.google.com" target="_blank"
-                                class="inline-flex items-center space-x-2 bg-white text-neutral-900 hover:bg-neutral-100 font-semibold px-5 py-2.5 rounded-full text-xs transition-colors shadow">
-                                <i class="fa-solid fa-map-location-dot text-gold-500"></i>
-                                <span>Abrir no Google Maps</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-neutral-950 text-neutral-400 py-12 border-t border-neutral-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-neutral-800">
-                <!-- Logo & Disclaimer -->
-                <div class="flex items-center space-x-3">
-                    <div
-                        class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-white shadow-md">
-                        <i class="fa-solid fa-tooth text-lg"></i>
-                    </div>
-                    <div>
-                        <!-- Footer -->
-                        <span class="font-serif text-xl font-bold tracking-wide text-white">ODONTO SHEKINAH</span>
-                        <p class="text-xs text-neutral-500">Dra. Mariane Ferreira — Odontologia & Estética</p>
-                        <p>&copy; 2026 Odonto Shekinah. Todos os direitos reservados.</p>
-                    </div>
-                </div>
-
-                <!-- Social Links -->
-                <div class="flex items-center space-x-4">
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-neutral-900 hover:bg-gold-400 hover:text-white flex items-center justify-center transition-colors border border-neutral-800">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-neutral-900 hover:bg-gold-400 hover:text-white flex items-center justify-center transition-colors border border-neutral-800">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 rounded-full bg-neutral-900 hover:bg-gold-400 hover:text-white flex items-center justify-center transition-colors border border-neutral-800">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
-                <p>&copy; 2026 Lumière Odontologia. Todos os direitos reservados.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-neutral-400 transition-colors">Política de Privacidade</a>
-                    <a href="#" class="hover:text-neutral-400 transition-colors">Termos de Uso</a>
-                </div>
-            </div>
-        </div>
     </footer>
 
-    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Lumière%20Odontologia."
-        target="_blank"
-        class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl gold-pulse transition-transform hover:scale-110 group"
-        aria-label="Fale conosco pelo WhatsApp">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <!-- Tooltip -->
-        <span
-            class="absolute right-20 bg-white text-neutral-800 text-xs font-semibold px-3 py-1.5 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-neutral-100">
-            Fale Conosco no WhatsApp
-        </span>
+
+    <!-- WHATSAPP FLUTUANTE -->
+
+    <a href="https://wa.me/5511999999999" class="whatsapp" aria-label="Falar pelo WhatsApp">
+        <span>☏</span>
     </a>
 
-    <script src="javascript.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
